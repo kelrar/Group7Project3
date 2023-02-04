@@ -1,1 +1,1 @@
-# Group7Project3
+# This is our repository for Project 3
