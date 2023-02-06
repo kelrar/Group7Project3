@@ -12,3 +12,7 @@ if not exists(FILE_NAME):
     print("The file has been retrieved and saved locally.")
 else:
     print("This file is already on your system")
+
+with open(r"C:\Users\black\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11\stuff\project3logfile.txt", 'r') as fp: #this line is where you'd need to change your file path
+    x = len(fp.readlines())
+    print('Total lines:', x)
