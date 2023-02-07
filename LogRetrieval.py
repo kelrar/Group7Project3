@@ -1,4 +1,5 @@
 import re
+import datetime
 from os.path import exists 
 from urllib.request import urlretrieve 
 
@@ -15,5 +16,13 @@ else:
 
 with open(r"/home/nguyendy/project3logfile.txt", 'r') as fp: #this line is where you'd need to change your file path
     x = len(fp.readlines())
-    print('The total amount of requests in the log file is: ', x)
-    
+    start_date = datetime.datetime(1995, 4, 11)
+    y = 0
+    for line in fp:
+        log_date = datetime.datetime.strptime(line.split()[3][1:], '%d/%b/%Y:%H:%M:%S')
+        if log_date >= start_date:
+            y += 1
+
+print("Number of total requests in the 6 months:", y)
+print('The total amount of requests in the log file is: ', x)
+
