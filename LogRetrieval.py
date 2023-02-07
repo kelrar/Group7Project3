@@ -13,6 +13,6 @@ if not exists(FILE_NAME):
 else:
     print("This file is already on your system")
 
-with open(FILE_NAME,'r') as fp: #this line is where you'd need to change your file path
+with open(FILE_NAME,'r') as fp: 
     x = len(fp.readlines())
     print('The total amount of requests in the log file is: ', x)
