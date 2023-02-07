@@ -13,3 +13,6 @@ def count_request(file_path):
 file_path = "path/to/log/file.log"
 total_request = count_request(file_path)
 print("Total request:", total_request )
+
+
+
