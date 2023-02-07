@@ -16,3 +16,4 @@ else:
 with open(FILE_NAME,'r') as fp: 
     x = len(fp.readlines())
     print('The total amount of requests in the log file is: ', x)
+
